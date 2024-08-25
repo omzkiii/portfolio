@@ -16,7 +16,7 @@ export default function Home() {
 
       </div>
 
-      <div className="flex flex-wrap relative h-auto w-screen justify-evenly py-20 px-10">
+      <div className="flex flex-wrap relative h-screen w-screen justify-evenly py-20 px-10">
         <div className="grid-rows-3 self-center">
           <h1 className="text-3xl p-5 ">Hi, my name is</h1>
           <h1 className="name text-7xl font-bold font-display">Geomar Santos</h1>
