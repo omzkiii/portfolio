@@ -54,7 +54,6 @@ body {
 
 @keyframes moveHorizontal {
   0% {
-    transform: translateX(-50%) translateY(-10%);
   }
   50% {
     transform: translateX(50%) translateY(10%);
@@ -128,18 +127,13 @@ h1 {
   filter: drop-shadow(15px 15px 15px #000);
 }
 
-.gradient-bg {
+.gradients-container {
   width: 100vw;
   height: 100vh;
   position: absolute;
   overflow: hidden;
-  background: linear-gradient(40deg, var(--base00), var(--base00));
+  /* background: linear-gradient(40deg, var(--base00), var(--base01)); */
   filter: blur(30px);
-}
-
-.gradients-container {
-  width: 100%;
-  height: 100%;
 }
 
 svg {
