@@ -2,28 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* color: tokyonight-base00; */
-  /* background: #1a1b26; */
-}
+/* body { */
+/* color: tokyonight-base00; */
+/* background: #1a1b26; */
+/* } */
 
 :root {
   --base00: #1a1b26;
   --base01: #24283b;
-  --base02: 65, 72, 104; /* #414868 */
-  --base03: 86, 95, 137; /* #565f89 */
-  --base04: 207, 201, 194; /* #cfc9c2 */
-  --base05: 154, 165, 206; /* #9aa5ce */
-  --base06: 169, 177, 214; /* #a9b1d6 */
-  --base07: 192, 202, 245; /* #c0caf5 */
-  --base08: 247, 118, 142; /* #f7768e */
-  --base09: 255, 158, 100; /* #ff9e64 */
-  --base0A: 224, 175, 104; /* #e0af68 */
-  --base0B: 158, 206, 106; /* #9ece6a */
-  --base0C: 115, 218, 202; /* #73daca */
-  --base0D: 42, 195, 222; /* #2ac3de */
-  --base0E: 125, 207, 255; /* #7dcfff */
-  --base0F: 122, 162, 247; /* #7aa2f7 */
+  --base02: 65, 72, 104;
+  /* #414868 */
+  --base03: 86, 95, 137;
+  /* #565f89 */
+  --base04: 207, 201, 194;
+  /* #cfc9c2 */
+  --base05: 154, 165, 206;
+  /* #9aa5ce */
+  --base06: 169, 177, 214;
+  /* #a9b1d6 */
+  --base07: 192, 202, 245;
+  /* #c0caf5 */
+  --base08: 247, 118, 142;
+  /* #f7768e */
+  --base09: 255, 158, 100;
+  /* #ff9e64 */
+  --base0A: 224, 175, 104;
+  /* #e0af68 */
+  --base0B: 158, 206, 106;
+  /* #9ece6a */
+  --base0C: 115, 218, 202;
+  /* #73daca */
+  --base0D: 42, 195, 222;
+  /* #2ac3de */
+  --base0E: 125, 207, 255;
+  /* #7dcfff */
+  --base0F: 122, 162, 247;
+  /* #7aa2f7 */
   --circle-size: 80%;
   --blending: hard-light;
 }
@@ -32,9 +46,11 @@ body {
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -44,9 +60,11 @@ body {
   0% {
     transform: translateY(-50%);
   }
+
   50% {
     transform: translateY(50%);
   }
+
   100% {
     transform: translateY(-50%);
   }
@@ -56,9 +74,11 @@ body {
   0% {
     transform: translateX(-50%) translateY(-10%);
   }
+
   50% {
     transform: translateX(50%) translateY(10%);
   }
+
   100% {
     transform: translateX(-50%) translateY(-10%);
   }
@@ -95,6 +115,7 @@ body {
 .d8 {
   animation-delay: 8s;
 }
+
 dot {
   transform: scaleX(3) scaleY(0.05) translateY(-40px);
   text-shadow: 0 0 10px;
@@ -162,12 +183,9 @@ svg {
 
 .g1 {
   position: absolute;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(var(--base0C), 0.8) 0,
-      rgba(var(--base0A), 0) 40%
-    )
-    no-repeat;
+      rgba(var(--base0A), 0) 40%) no-repeat;
   mix-blend-mode: var(--blending);
   width: var(--circle-size);
   height: var(--circle-size);
@@ -180,12 +198,9 @@ svg {
 
 .g2 {
   position: absolute;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(var(--base09), 0.8) 0,
-      rgba(var(--base0F), 0) 50%
-    )
-    no-repeat;
+      rgba(var(--base0F), 0) 50%) no-repeat;
   mix-blend-mode: var(--blending);
   width: var(--circle-size);
   height: var(--circle-size);
@@ -198,12 +213,9 @@ svg {
 
 .g3 {
   position: absolute;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(var(--base08), 0.8) 0,
-      rgba(var(--base0C), 0) 40%
-    )
-    no-repeat;
+      rgba(var(--base0C), 0) 40%) no-repeat;
   mix-blend-mode: var(--blending);
   width: var(--circle-size);
   height: var(--circle-size);
@@ -216,12 +228,9 @@ svg {
 
 .g4 {
   position: absolute;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(var(--base0E), 0.8) 0,
-      rgba(var(--base0D), 0) 45%
-    )
-    no-repeat;
+      rgba(var(--base0D), 0) 45%) no-repeat;
   mix-blend-mode: var(--blending);
   width: var(--circle-size);
   height: var(--circle-size);
@@ -234,12 +243,9 @@ svg {
 
 .g5 {
   position: absolute;
-  background: radial-gradient(
-      circle at center,
+  background: radial-gradient(circle at center,
       rgba(var(--base0B), 0.8) 0,
-      rgba(var(--base03), 0) 40%
-    )
-    no-repeat;
+      rgba(var(--base03), 0) 40%) no-repeat;
   mix-blend-mode: var(--blending);
   width: var(--circle-size);
   height: var(--circle-size);

@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-
     <main className="">
-      <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
       </style>
 
       <div className=" bg-tokyonight-base00 flex flex-wrap relative justify-evenly py-20 px-10">

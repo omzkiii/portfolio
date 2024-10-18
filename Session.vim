@@ -13,13 +13,15 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +27 ~/Documents/Projects/portfolio/app/page.jsx
+badd +2 ~/Documents/Projects/portfolio/app/page.jsx
 badd +61 app/globals.css
+badd +2 ~/Documents/Projects/portfolio/app/layout.js
+badd +1 app/components/main.jsx
 argglobal
 %argdel
 edit ~/Documents/Projects/portfolio/app/page.jsx
 argglobal
-balt app/globals.css
+balt app/components/main.jsx
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -30,12 +32,12 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 33 - ((28 * winheight(0) + 23) / 46)
+let s:l = 2 - ((1 * winheight(0) + 10) / 20)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 33
-normal! 014|
+keepjumps 2
+normal! 010|
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
   silent exe 'bwipe ' . s:wipebuf
